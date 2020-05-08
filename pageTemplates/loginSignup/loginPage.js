@@ -75,6 +75,7 @@ export default LoginPage = () => {
                 keyboardType="email-address"
               />
               <Text style={pageStyle.errorLabel}>{props.touched.email && props.errors.email}</Text>
+
               <TextInput
                 placeholder="Password"
                 onChangeText={props.handleChange("password")}
@@ -83,6 +84,7 @@ export default LoginPage = () => {
                 style={pageStyle.loginInput}
                 secureTextEntry
               />
+
               <Text style={pageStyle.errorLabel}>
                 {props.touched.password && props.errors.password}
               </Text>

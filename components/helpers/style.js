@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { round } from "react-native-reanimated";
 
 export const Colors = {
   textColor: "#333",
@@ -52,11 +53,10 @@ const boldLabel = {
 
 const baseContainer = {
   flex: 1,
-  padding: 15,
+  padding: 20,
 };
 const RowContainer = {
   flexDirection: "row",
-  justifyContent: "flex-start",
   flexWrap: "wrap",
 };
 
@@ -68,24 +68,82 @@ export const Layout = StyleSheet.create({
   contentContainer: {
     ...baseContainer,
   },
-
+  ProfilePictureContainer: {
+    ...baseContainer,
+    alignSelf: "center",
+    alignItems: "center",
+    width: 100,
+  },
+  profilePictureEditIcon: {
+    position: "absolute",
+    zIndex: 99,
+    top: 90,
+    left: 80,
+  },
   contentVerticalContainer: {
     ...baseContainer,
     justifyContent: "space-between",
   },
   pageHeaderContainer: {
     ...RowContainer,
+    justifyContent: "flex-start",
     padding: 10,
   },
   moduleGroupContainer: {
     ...RowContainer,
+    marginTop: 20,
+    marginBottom: 20,
+    alignItems: "center",
   },
-
   switchContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     marginTop: 10,
+  },
+  devider: {
+    borderWidth: 0.3,
+    borderColor: Colors.secondaryColor,
+  },
+});
+
+export const Graphics = StyleSheet.create({
+  profilePicture: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+  },
+  profilePictureLarge: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+  },
+  moduleIcon: {
+    backgroundColor: Colors.bgDark,
+    margin: "auto",
+  },
+});
+
+export const Labels = StyleSheet.create({
+  pageHeaderText: {
+    ...normalLabel,
+    marginLeft: 5,
+    fontSize: 14,
+  },
+  sectionLabel: {
+    ...boldLabel,
+    fontSize: 14,
+  },
+  iconLabel: {
+    ...boldLabel,
+    fontSize: 14,
+    marginLeft: 10,
+  },
+  descriptionLabel: {
+    ...normalLabel,
+    fontSize: 10,
+    marginTop: 2,
+    marginLeft: 10,
   },
 });
 

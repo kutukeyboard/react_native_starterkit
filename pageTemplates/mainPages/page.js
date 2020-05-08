@@ -11,7 +11,7 @@ export default PageTemplate = ({ navigation }) => {
         backgroundColor: "#fff",
       }}
     >
-      <Text>Home Screen</Text>
+      <Text>Empty Page Template</Text>
     </View>
   );
 };

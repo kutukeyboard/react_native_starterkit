@@ -66,7 +66,7 @@ export default App = () => {
         AsyncStorage.setItem("userToken", data);
         dispatch({ type: "SIGN_IN", token: data });
       },
-      signOut: () => dispatch({ type: "SIGN_OUT" }),
+      signOut: async () => dispatch({ type: "SIGN_OUT" }),
     }),
     []
   );
@@ -84,7 +84,9 @@ export default App = () => {
           }}
         >
           {state.userToken != null ? (
-            <Stack.Screen name="Home" component={HomeContainer} options={{ headerShown: false }} />
+            <Stack.Screen name="Home" options={{ headerShown: false }}>
+              {() => <HomeContainer {...AuthContext} />}
+            </Stack.Screen>
           ) : (
             <>
               <Stack.Screen name="Login" options={{ headerShown: false }}>
