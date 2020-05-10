@@ -23,6 +23,9 @@ npm install
 - Login Page
 - Signup Page
 - OTP Page
-- List Page
 - Setting Page
 - User Profile Page
+- Inbox Page
+- Message Detail Page
+- Product Catalog Page
+- Product Detail Page
