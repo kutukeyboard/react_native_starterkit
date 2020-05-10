@@ -93,7 +93,6 @@ export const Layout = StyleSheet.create({
     ...RowContainer,
     marginTop: 20,
     marginBottom: 20,
-    alignItems: "center",
   },
   switchContainer: {
     flexDirection: "row",
@@ -118,6 +117,7 @@ export const Graphics = StyleSheet.create({
     height: 100,
     borderRadius: 50,
   },
+  
   moduleIcon: {
     backgroundColor: Colors.bgDark,
     margin: "auto",

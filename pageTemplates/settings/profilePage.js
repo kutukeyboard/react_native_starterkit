@@ -24,14 +24,6 @@ import { ScrollView } from "react-native-gesture-handler";
 export default ProfilePage = () => {
   const [userData, setUserData] = useState();
 
-  const imagePickeroptions = {
-    title: "Select Avatar",
-    customButtons: [{ name: "fb", title: "Choose Photo from Facebook" }],
-    storageOptions: {
-      skipBackup: true,
-      path: "images",
-    },
-  };
 
   const getUserData = () => {
     //get user data via your API here

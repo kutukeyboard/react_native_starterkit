@@ -94,7 +94,7 @@ export default App = () => {
               </Stack.Screen>
 
               <Stack.Screen name="SignUp" options={{ title: "SIGN UP" }}>
-                {() => <SignupPage />}
+                {(props) => <SignupPage {...props} />}
               </Stack.Screen>
 
               <Stack.Screen name="Otp" options={{ headerShown: false }}>

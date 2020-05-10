@@ -1,15 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  TouchableOpacity,
-  View,
-  Text,
-  Image,
-  TextInput,
-  Keyboard,
-  FlatList,
-} from "react-native";
+import { SafeAreaView, StyleSheet, TouchableOpacity, View, Text, FlatList } from "react-native";
 
 import { Colors, Layout } from "../../components/helpers/style";
 

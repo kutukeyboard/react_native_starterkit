@@ -18,7 +18,7 @@ const DATA = [
     id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
     title: "Product Catalog",
     description: "Product catalog and details",
-    page: "CatalogPage",
+    page: "Catalog",
   },
   {
     id: "58694a0f-3da1-471f-bd96-145571e29d72",
