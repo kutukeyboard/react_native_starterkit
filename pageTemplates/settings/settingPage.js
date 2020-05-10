@@ -10,7 +10,7 @@ import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
 export default SettingPage = (AuthContext) => {
   const { signOut } = useContext(AuthContext);
   const navigation = useNavigation();
-
+  const myImage = "../../images/profile.jpg";
   return (
     <SafeAreaView style={Layout.pageContainer}>
       <View style={Layout.pageHeaderContainer}>
@@ -22,7 +22,7 @@ export default SettingPage = (AuthContext) => {
           style={Layout.moduleGroupContainer}
           onPress={() => navigation.navigate("Profile")}
         >
-          <Image source={require("../../images/profile.jpg")} style={Graphics.profilePicture} />
+          <Image source={require(myImage)} style={Graphics.profilePicture} />
           <Text style={Labels.iconLabel}>Veronica Juan</Text>
         </TouchableOpacity>
 
